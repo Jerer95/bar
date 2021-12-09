@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+ body {
+        /* Add image */
+        background-image:linear-gradient(0deg, rgba(0,0,0,0.5) 90%, rgba(0,0,0,0.85) 100%), url(bar2.jpg);
+  
+        /* Make image center */
+        background-position: center center;
+  
+        /* Make image fixed */
+        background-attachment: fixed;
+  
+        /* Not repeat images */
+        background-repeat: no-repeat;
+  
+        /* Set background size auto */
+        background-size: cover;
+      }
+#menu .w3-center.w3-jumbo.w3-padding-32 {
+    color: #FFF500;
+    
+}
+
+
+
+.left-side {
+    text-align: center;
+    right: auto;
+    left: auto;
+    float: center;
+    
+}
+.left-side .address.details {
+    color: gold;
+    font-size: 30px;
+    font-family: aubrey;
+    font-style: normal;
+    font-weight: 400;
+	padding: 20px;
+}
+.left-side .phone.details {
+    color: gold;
+    font-size: 30px;
+    font-family: aubrey;
+    font-style: normal;
+    font-weight: 400;
+	padding: 20px;
+}
+.left-side .email.details {
+    color: gold;
+    font-size: 30px;
+    font-family: aubrey;
+    font-style: normal;
+    font-weight: 400;
+	padding: 20px;
+}
+
+
+
+
+iframe {
+	
+	display: block;
+	width: 90vw;
+	height: calc(.75 * 90vw);
+	max-width: 800px;
+	max-height: 400px;
+	margin: 1em auto;
+}
+
+  
+      /* Media query for mobile devices  */
+      @media (min-width:767px) and (max-width:767px){
+        body {
+          background-image: url(bar2.jpg);
+        }
+
+}
+
+
+.menu {display: none}
+
+header {
+    height: 100%;
+    width: 100%;
+    float: left;
+    padding: 0 20px;
+    color: gold;
+}
+.brand-logo {
+    max-width: 75px;
+    float: left;
+    padding: 15px 0px;
+}
+.brand-logo img {
+    width: 300px;
+	height: 150px;
+	position: absolute;
+	left: 8%;
+	top: 10%;
+	
+}
+
+@media only screen and (max-width: 767px) {
+.brand-logo img {
+opacity: 0!important
+}}
+
+.navigation {
+    margin: 0px;
+    float: none;
+    display: block;
+    text-align: center;
+    padding: 70px;
+    font-family: waiting-for-the-sunrise;
+	
+    	
+}
+.navigation li {
+    list-style: none;
+    float: none;
+    text-align: center;
+    display: inline-block;
+    font-family: waiting-for-the-sunrise;
+    font-style: normal;
+    font-weight: 400;
+}
+.navigation li a {
+    color: gold;
+    padding: 28px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+	font-size: 25px;
+	
+	
+}
+.navigation li a i {
+    width: 100%;
+    font-size: 35px;
+    margin-bottom: 7px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: white;
+    text-decoration: none;
+}
+.show-menu-btn,
+.hide-menu-btn {
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.show-menu-btn {
+    margin: 0px;
+    float: right;
+}
+.show-menu-btn i {
+    line-height: 100px;
+}
+.navigation a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover {
+    color: white;
+    font-size: 30px;
+    text-decoration: underline;
+}
+#toggle-btn {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
+
+
+/*-- Responsive CSS --*/
+@media screen and (max-width:767px) {
+.show-menu-btn,
+.hide-menu-btn {
+    display: block;
+}
+.navigation {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #BCBCBC;
+    top: -100%;
+    left: 0;
+    padding: 50px 0px;
+    transition: 1s;
+	
+}
+.navigation li {
+    width: 100%;
+}
+.navigation li a {
+    padding: 15px 15px;
+    text-align: left;
+}
+.navigation li a i {
+    width: auto;
+    font-size: 20px;
+}
+.hide-menu-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+	
+}
+
+#toggle-btn:checked ~ nav .navigation {
+    top: 0px;
+}
+}
+
+
+
+@media screen and (max-width: 601px) {
+  div.text h1 {
+    font-size: 40px;
+  }
+}
+
+
+.text h1 {
+	color: gold;
+	text-align: center;
+	font-size: 65px;
+	font-weight: 600;
+	font-family: "waiting-for-the-sunrise";
+	text-decoration: underline;
+	
+}
+
+
+.text p {
+	color: whitesmoke;
+	text-align: center;
+	padding: 15px;
+	font-size: 30px;
+	
+}
+
+table {
+float: inherit;
+}
+
+
+
+.openinghours {
+    font-family:Lucida Console;
+    color: white;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+	
+}
+.openinghourscontent {
+    text-align: center;
+}
+.opening-hours-table {
+	 margin-left: auto;
+  	 margin-right: auto;
+	
+}
+
+.openinghourscontent h2 {
+    display:block;
+    margin-top:.33em;
+	color: gold;
+	padding: 20px;
+	text-decoration: underline;
+	text-align: center;
+}
+
+.opening-hours-table tr td:first-child {
+    font-weight:bold;
+	text-align: center;
+	
+}
